@@ -15,16 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from flights.views import find_flights, find_seats, book, delete, get_booking, update, Check_booking
+from flights.views import find_flights, find_seats, book, delete, get_booking, update
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('airline_api/flights',find_flights ),
-    path('airline_api/seats',find_seats ),
-    path('airline_api/book',book ),
-    path('airline_api/get_booking_details',get_booking ),
-    path('airline_api/delete_booking',delete ),
-    path('airline_api/update_seats',update ),
+    path('flights/',find_flights ),
+    path('seats/',find_seats ),
+    path('book/',book ),
+    path('get_booking_details/',get_booking ),
+    path('delete_booking/',delete ),
+    path('update_seats/',update ),
 ##What about check_booking()???????
 
 ]
